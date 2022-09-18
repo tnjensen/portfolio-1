@@ -209,12 +209,13 @@ footer{
         font-size: 1.1rem;
     }
     .main-content{
+        font-size: 1.2rem;
         max-width: 60%;
     }
     .main-content img{
         width: 300px;
     }
     .cta{
-        max-width: 130px;
+        max-width: 150px;
     }
 }
