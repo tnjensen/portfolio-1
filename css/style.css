@@ -160,7 +160,7 @@ footer{
 }
 .footer-social i:hover{
     cursor: pointer;
-    background-color: rgb(238, 238, 238);
+    background-color: #fffefe;
     border-radius: 5px;
 }
 @media screen and (min-width: 600px){
