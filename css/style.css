@@ -9,7 +9,7 @@ body{
     color: rgb(3,5,4);
 }
 .wrapper{
-    /* max-width: 1160px; */
+    max-width: 1160px;
     margin: 0 auto;
     background-color:rgb(151, 235, 212);
 }
