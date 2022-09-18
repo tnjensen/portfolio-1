@@ -4,10 +4,130 @@
     padding: 0;
 }
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arvo, Geneva, Tahoma, sans-serif, Geneva, Tahoma, sans-serif;
+    font-size: .9rem;
+    color: rgb(3,5,4);
+}
+.wrapper{
+    /* max-width: 1160px; */
+    margin: 0 auto;
+    background-color:rgb(151, 235, 212);
 }
 header{
-    background-color: blue;
-    color: #fffefe;
+    background-color: rgb(238, 238, 238);
+    padding: 10px 15px;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-branding, .menu-wrap{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-family: Lato, Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+.logo img{
+    border-radius: 50%;
+    width: 35px;
+}
+ul{
+    list-style-type: none;
+}
+/* .header-content, .header-branding{
+    display: inline-flex;
+    justify-content: ;
+    align-items: center;
+    padding: 0 15px;
+} */
+.header-title{
+    padding-left: 20px;
+}
+.nav-menu ul{
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    display: none;
+}
+.nav-menu li{
+    padding: 10px;
+}
+.nav-menu a{
+    text-decoration: none;
+}
+.nav-menu a:hover{
+    text-decoration: underline;
+}
+.menu-btn{
+    font-size: 1rem;
+    display: block;
+    position: relative;
+    right: 15px;
+}
+.menu-btn:hover{
+    cursor: pointer;
+}
+.menu-btn.visible ~ nav ul{
+    display: block;
+    background-color:rgb(238, 238, 238);
+    position: absolute;
+    top: 60px;
+    padding: 15px 0;
+}
+a.active{
+    background-color: #fffefe;
+    padding: 5px;
+    border-radius: 3px;
+}
+.main-content{
+    min-height: 80vh;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(176, 201, 191);
+    align-items: center;
+    min-height: 10vh;
+}
+.footer-social i{
+    margin-right: 10px;
+    padding: 5px;
+}
+.footer-social i:hover{
+    cursor: pointer;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+}
+@media screen and (min-width: 600px){
+    body{
+        font-size: 1rem;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-size: 1.5rem;
+    }
+    .menu-btn{
+        display: none;
+    }
+    .nav-menu ul{
+        display: inline-flex;
+        position: relative;
+        top: -1px;
+    }
+    .logo img{
+        width: 45px;
+    }
+}
+@media screen and (min-width: 900px) {
+    .main-content{
+        max-width: 60%;
+    }
+}
