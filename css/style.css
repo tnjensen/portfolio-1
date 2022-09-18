@@ -29,7 +29,6 @@ header{
 
 h1,h2,h3,h4,h5,h6{
     font-family: Lato, Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.3rem;
 }
 .logo img{
     border-radius: 50%;
@@ -38,12 +37,6 @@ h1,h2,h3,h4,h5,h6{
 ul{
     list-style-type: none;
 }
-/* .header-content, .header-branding{
-    display: inline-flex;
-    justify-content: ;
-    align-items: center;
-    padding: 0 15px;
-} */
 .header-title{
     padding-left: 20px;
 }
@@ -87,10 +80,72 @@ a.active{
 }
 .main-content{
     min-height: 80vh;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-top: 10%;
+    margin-bottom: 20px;
+}
+.main-content img{
+    width: 200px;
+    height: auto;
+    margin-top: 10%;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 80vh;
     max-width: 80%;
     margin: 0 auto;
-    padding-top: 20px;
-    margin-bottom: 20px;
+}
+.project-heading{
+    margin-top: 10px;
+    text-align: center;
+    flex: 0 0 100%;
+}
+.project-item{
+    flex:1;
+    margin: 10px;
+    padding: 10px;
+    max-width: 70%;
+}
+.project-item h3{
+    color: blue;
+}
+.project-item img{
+    max-width: 90%;
+}
+.technologies{
+    font-size: smaller;
+    font-style: oblique;
+    color: blue;
+}
+.span{
+    color: blue;
+}
+.cta{
+    background-color: blue;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    position: relative;
+    top: 15px;
+    /* max-width: 25%; */
+}
+.learn-more{
+    color: #fffefe;
+    text-decoration: none;
+}
+.cta:hover, .cta a:hover{
+    color: blue;
+    background-color: #fffefe;
+    cursor: pointer;
+}
+.name{
+    color: blue;
 }
 footer{
     display: flex;
@@ -112,9 +167,6 @@ footer{
     body{
         font-size: 1rem;
     }
-    h1,h2,h3,h4,h5,h6{
-        font-size: 1.5rem;
-    }
     .menu-btn{
         display: none;
     }
@@ -126,9 +178,43 @@ footer{
     .logo img{
         width: 45px;
     }
+    .main-content{
+        margin-top: 5%;
+    }
+    .main-content p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .learn-more{
+        display: flex;
+    }
+    .main-content img{
+        position: relative;
+        padding-left: 10px;
+        width: 250px;
+        top: 50%;
+        left: 60%;
+        transform: translateY(-50%);
+    }
+    .cta{
+        max-width: 120px;
+    }
+    .projects{
+        flex-direction: row;
+    }
 }
 @media screen and (min-width: 900px) {
+    body{
+        font-size: 1.1rem;
+    }
     .main-content{
         max-width: 60%;
+    }
+    .main-content img{
+        width: 300px;
+    }
+    .cta{
+        max-width: 130px;
     }
 }
