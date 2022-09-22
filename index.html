@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -48,7 +48,7 @@
                 </section>
                 <section class="projects" id="portfolio">
                     <div class="project-heading">
-                        <h1>Portfolio 1</h1>
+                        <h1>Projects</h1>
                     </div>
                     <div class="loader loading-indicator"></div>
                     <!-- <div class="project-item"> -->
@@ -75,12 +75,45 @@
                    <!--  </div> -->
                 </section>
                 <section class="about" id="about">
-                    <h1>Portfolio 1 Site</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nostrum tenetur ipsum repellendus praesentium. Nihil saepe pariatur ipsa rerum maiores quisquam, voluptatum voluptates magni vel a commodi nisi distinctio non.</p>
+                    <div class="about-heading">
+                    <h1>About me</h1>
+                </div>
+                <div class="about-content">
+                    <p>When I was still in high-school, my father bought our first computer, a Commodore 64. We took a computer class together, but that was back in the old DOS days and it didn't really amount to anything. But when Windows 95 was launched, my interest in computers and programming really got started. After a few years, I signed up for a lifetime membership at learnvisualstudio.com, following the video lectures of Bob Tabor from the USA. He also taught Javascript and that's how I got into web design. After coding nearly every day since then, I realized that I wanted to formalize my knowledge. A friend of mine suggested Lynda.com (now LinkedIn Learning) where I've taken a number of courses related to programming and web-design. Later I discovered the Noroff University, based in Norway, where I'm currently studying Frontend Development.</p>
+                    <img src="images/software.png" alt="web design image" width="200" height="auto" />
+                    <p><a href="https://www.flaticon.com/free-icons/cms" title="cms icons">Cms icons created by Freepik - Flaticon</a></p>
+                </div>
                 </section>
                 <section class="contact" id="contact">
-                    <h1>Portfolio 1 Site</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nostrum tenetur ipsum repellendus praesentium. Nihil saepe pariatur ipsa rerum maiores quisquam, voluptatum voluptates magni vel a commodi nisi distinctio non.</p>
+                    <div class="contact-heading">
+                        <h1>Contact me</h1>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-details">
+                            <h4>Name: <span class="contact-name">Thomas N. Jensen</span></h4>
+                            <h4>Email: <span class="contact-email">thomasnorupjensen@gmail.com</span></h4>
+                        </div>
+                        <div class="contact-form">
+                        <h4>Send me a message:</h4>
+                        <form>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" />
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" />
+                            <label for="message">Message</label>
+                            <textarea cols="30" rows="5"></textarea>
+                            <input type="submit" name="submit" id="submit" value="Send" />
+                        </form>
+                    </div>
+                        <div class="contact-tech">
+                            <h3>Technologies I know:</h3>
+                            <ul>
+                                <li><i class="fa-brands fa-html5"></i>HTML</li>
+                                <li><i class="fa-brands fa-css3"></i>CSS</li>
+                                <li><i class="fa-brands fa-js"></i>Javascript</li>
+                            </ul>
+                        </div>
+                    </div>
                 </section>
                 
         </main>
@@ -88,9 +121,9 @@
             <div class="footer-content">Copyright &copy; 2022<script>new Date().getFullYear()>2022&&document.write("-"+new
               Date().getFullYear());</script></div>
             <div class="footer-social">
-              <i class="fa fa-twitter"></i>
-              <i class="fa fa-facebook"></i>
-              <i class="fa fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
             </div>
           </footer>
     </div>

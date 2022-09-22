@@ -107,7 +107,7 @@ a.active{
     left: 20%;
     top: 30%;
 }
-.projects{
+.projects, .about-content, .contact-content{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -115,11 +115,49 @@ a.active{
     max-width: 80%;
     margin: 0 auto;
 }
-.project-heading{
+.contact-email, .contact-name, .contact-form h4{
+    color: blue;
+}
+.contact-form, .contact-form form{
+   display: flex;
+   flex-direction: column;
+}
+.contact-form input, textarea{
+    padding: 5px 0;
+}
+.contact-details, .contact-form{
+    line-height: 1.5;
+}
+.contact-details{
+    margin: 20px 0 10px 0;
+}
+.contact-form input[type="submit"]{
+    margin-top: 10px;
+    background-color: blue;
+    color: #fffefe;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+.contact-form input[type="submit"]:hover{
+    background-color: #fffefe;
+    color: blue;
+    border: 1px solid black;
+}
+.contact-tech{
+    margin: auto;
+}
+.about-content img, .about-content p{
+    padding: 10px 0;
+    margin: 0 auto;
+}
+.project-heading, .about-heading, .contact-heading{
     margin-top: 10px;
     text-align: center;
     flex: 0 0 100%;
 }
+
 .project-item{
     flex:1;
     margin: 10px;
@@ -223,6 +261,25 @@ footer{
     }
     .projects{
         flex-direction: row;
+    }
+    .contact-content{
+        flex-direction: row;
+        max-width: 80%;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+    .contact-details{
+        margin: 0;
+        padding: 0;
+    }
+    .contact-tech{
+        flex: 0 0 100%;
+        text-align: center;
+        margin: 40px 0;
+    }
+    .contact-tech i{
+        padding: 5px 0;
+        margin-right:3px;
     }
 }
 @media screen and (min-width: 900px) {
