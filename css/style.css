@@ -24,6 +24,7 @@ header{
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 .header-branding, .menu-wrap{
     display: inline-flex;
@@ -73,7 +74,7 @@ ul{
     text-decoration: underline;
 }
 .menu-btn{
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: block;
     position: relative;
     right: 15px;
@@ -98,19 +99,18 @@ a.active{
     min-height: 80vh;
     max-width: 60%;
     margin: 0 auto;
-    padding-top: 10%;
-    margin-bottom: 20px;
+    margin-top: 1rem;
 }
 .main-content img{
     width: 200px;
     height: auto;
-    margin-top: 10%;
     position: absolute;
     left: 20%;
     top: 35%;
 }
 #index, #portfolio, #about, #contact{
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    scroll-margin-top: 6rem;
 }
 .projects, .about-content, .contact-content{
     display: flex;
@@ -264,6 +264,9 @@ footer{
     }
     .main-content{
         margin-top: 5%;
+    }
+    .main-content img{
+        margin-top: 10%;
     }
     .main-content p{
         display: flex;
