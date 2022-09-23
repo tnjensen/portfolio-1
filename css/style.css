@@ -108,9 +108,11 @@ a.active{
     left: 20%;
     top: 35%;
 }
-#index, #portfolio, #about, #contact{
-    /* min-height: 100vh; */
-    scroll-margin-top: 6rem;
+#portfolio{
+    scroll-margin-top: 6.5rem;
+}
+#about, #contact{
+    scroll-margin-top: 7rem;
 }
 .projects, .about-content, .contact-content{
     display: flex;
