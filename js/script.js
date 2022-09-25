@@ -1,7 +1,7 @@
 const links = document.querySelectorAll('nav a');
 const menuBtn = document.querySelector('.menu-btn');
 const projects = document.querySelector('.projects');
-const url = 'https://noroff.tnjensen.com/portfolio/wp-json/wp/v2/posts?_embed&filter[orderby]=date&order=asc';
+const url = 'https://noroff.tnjensen.com/portfolio/wp-json/wp/v2/posts?categories=3&_embed&filter[orderby]=date&order=asc';
 const corsEnabledUrl ="https://noroffcors.herokuapp.com/";
 const loader = document.querySelector('.loader');
 let postsPerPage = 0;
@@ -27,10 +27,11 @@ async function getProjects(){
     try{
         let response = await fetch(url);
         let results = await response.json();
+        console.log(results);
         loader.innerHTML = "";
         loader.classList.remove('loading-indicator');
         createHTML(results);
-    
+        
     }
     catch(error){
         if(projects){
