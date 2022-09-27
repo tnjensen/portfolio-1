@@ -256,7 +256,7 @@ a.active{
 }
 .cta:hover, .cta a:hover{
     color: blue;
-    background-color: rgb(238, 238, 238);
+    background-color: #fffefe;
     cursor: pointer;
 }
 .name{
