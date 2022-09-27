@@ -16,7 +16,6 @@ body{
 }
 header{
     background-color: rgb(242, 242, 242);
-/*     background-color:rgb(151, 235, 212); */
     padding: 10px 15px;
     min-height: 10vh;
     display: flex;
@@ -122,16 +121,33 @@ a.active{
     max-width: 80%;
     margin: 0 auto;
 }
+/* .about-icon{
+    animation: right 2s forwards;
+    right: -1000px;
+    position: relative;
+}
+@keyframes right{
+    0%{
+        right: -1000px;
+    }
+    100%{
+        right: 0px;
+    }
+} */
 .site-btn{
-    padding: 5px 10px;
+    padding: 5px 12px;
     background-color: blue;
-    border: none;
     float: right;
-    margin: -25px 10px 0 0 ;
+    margin: -27px 10px 0 0 ;
     border-radius: 3px;
 }
-.site-btn a{
+.site-btn{
     color: #fffefe !important;
+}
+.site-btn:hover{
+    color: blue !important;
+    background-color: #fffefe !important;
+    text-decoration: none !important;
 }
 .contact-email, .contact-name, .contact-form h4{
     color: blue;
@@ -240,7 +256,7 @@ a.active{
 }
 .cta:hover, .cta a:hover{
     color: blue;
-    background-color: #fffefe;
+    background-color: rgb(238, 238, 238);
     cursor: pointer;
 }
 .name{
@@ -310,6 +326,11 @@ footer{
     .project-item{
         margin: 10px 10px 10px 0;
     }
+    .site-btn{
+        float: left;
+        margin-top: 10px;
+        border-radius: 3px;
+    }
     .about-content{
         display: flex;
         flex-flow: row nowrap;
@@ -362,6 +383,13 @@ footer{
     }
     .cta{
         max-width: 150px;
+    }
+    .site-btn{
+        padding: 5px 12px;
+        background-color: blue;
+        float: right;
+        margin: -27px 10px 0 0 ;
+        border-radius: 3px;
     }
 }
 @media screen and(min-width: 1020px){
