@@ -51,7 +51,7 @@ function createHTML(results){
                 <h2>${results[i].title.rendered}</h2>
                 <img src="${results[i]._embedded['wp:featuredmedia'][0].source_url}" alt="${results[i]._embedded['wp:featuredmedia'][0].alt_text}" />
                 <p>${results[i].content.rendered}</p>
-                <a href="${results[i].meta._links_to}">Visit site</a>
+                <button class="site-btn"><a href="${results[i].meta._links_to}">Visit site</a></button>
                 </div>`; 
         }
     }
