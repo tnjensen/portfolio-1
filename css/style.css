@@ -191,11 +191,9 @@ a.active{
     display: none;
 }
 .contact-tech{
-    margin: auto;
     margin-top: 20px;
     margin-bottom: 30px;
     line-height: 1.5;
-   
 }
 .contact-tech i{
     margin-right: 3px;
