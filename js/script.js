@@ -8,9 +8,15 @@ let postsPerPage = 0;
 let postResult = [];
 
 for(let i = 0; i < links.length; i++){
-    if(links[i] == document.URL){
-        links[i].classList.add('active');
-    }
+    links[i].addEventListener('click', function(){
+        let current = document.getElementsByClassName('active');
+        if(current.length > 0){
+            current[0].className = current[0].className.replace(" active", "");
+        }
+       
+        this.className += " active";
+    })
+    
 }
 
 menuBtn.addEventListener('click', function(){

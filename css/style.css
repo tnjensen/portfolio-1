@@ -121,7 +121,7 @@ a.active{
     max-width: 80%;
     margin: 0 auto;
 }
-/* .about-icon{
+.about-icon{
     animation: right 2s forwards;
     right: -1000px;
     position: relative;
@@ -133,7 +133,7 @@ a.active{
     100%{
         right: 0px;
     }
-} */
+}
 .site-btn{
     padding: 5px 12px;
     background-color: blue;
