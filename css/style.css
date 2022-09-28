@@ -107,6 +107,9 @@ a.active{
     left: 20%;
     top: 35%;
 }
+#index{
+    scroll-margin-top: 8em;
+}
 #portfolio{
     scroll-margin-top: 6.5rem;
 }
