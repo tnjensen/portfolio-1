@@ -152,8 +152,12 @@ a.active{
     background-color: #fffefe !important;
     text-decoration: none !important;
 }
-.contact-email, .contact-name, .contact-form h4{
+.contact-name, .contact-details h3, .contact-form h3{
+    margin-bottom: 10px;
+}
+.contact-details i, .contact-tech i{
     color: blue;
+    font-size: 1.5rem;
 }
 .contact-form, .contact-form form{
    display: flex;
@@ -188,6 +192,13 @@ a.active{
 }
 .contact-tech{
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+   
+}
+.contact-tech i{
+    margin-right: 3px;
 }
 .about-content{
     display: flex;
