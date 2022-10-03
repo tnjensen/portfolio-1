@@ -214,12 +214,12 @@ a.active{
 }
 .about-icon img{
     margin-top: 10px;
-    width: 110px;
-    height: 110px;
+    max-width: 100px;
+    max-height: 100px;
 }
 .about-icon p{
     margin-top: 10px;
-    max-width: 60%;
+    max-width: 45%;
     text-align: center;
 }
 .project-heading, .about-heading, .contact-heading{
@@ -261,7 +261,6 @@ a.active{
     border: none;
     position: relative;
     top: 15px;
-    /* max-width: 25%; */
 }
 .learn-more{
     color: #fffefe;
@@ -355,14 +354,14 @@ footer{
         margin-top: 40px;
     }
     .about-icon img{
-        width: 125px;
-        height: 125px;
+        max-width: 120px;
+        max-height: 120px;
+    }
+    .about-icon p{
+        max-width: 60%;
     }
     .about-text{
         max-width: 60%;
-    }
-    .about-icon img{
-        max-width: 250px;
     }
     .contact-content{
         flex-direction: row;
@@ -409,8 +408,8 @@ footer{
         border-radius: 3px;
     }
     .about-icon img{
-        width: 150px;
-        height: 150px;
+        max-width: 150px;
+        max-height: 150px;
     }
 }
 @media screen and(min-width: 1020px){
