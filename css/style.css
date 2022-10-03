@@ -162,7 +162,7 @@ a.active{
 .contact-form form{
    display: flex;
    flex-direction: column;
-   max-width: 75%;
+   max-width: 50%;
 }
 .contact-form input, textarea{
     padding: 3px;
@@ -374,8 +374,8 @@ footer{
         margin: 0;
         padding: 0;
     }
-    .contact-form{
-        max-width: 60%;
+    .contact-form form{
+        max-width: 90%;
     }
     .contact-tech{
         flex: 0 0 100%;
@@ -417,4 +417,5 @@ footer{
     .about-icon img{
         margin-top: 0;
     }
+   
 }
