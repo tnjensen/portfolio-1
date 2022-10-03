@@ -184,7 +184,6 @@ a.active{
 .contact-form input[type="submit"]:hover{
     background-color: #fffefe;
     color: blue;
-    border: 1px solid black;
 }
 .form-error{
     color: tomato;
