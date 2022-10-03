@@ -159,9 +159,10 @@ a.active{
     color: blue;
     font-size: 1.5rem;
 }
-.contact-form, .contact-form form{
+.contact-form form{
    display: flex;
    flex-direction: column;
+   max-width: 75%;
 }
 .contact-form input, textarea{
     padding: 3px;
