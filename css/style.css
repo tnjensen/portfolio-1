@@ -197,7 +197,7 @@ a.active{
 .contact-form form{
    display: flex;
    flex-direction: column;
-   max-width: 50%;
+   max-width: 70%;
 }
 .contact-form input, textarea{
     padding: 3px;
