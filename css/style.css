@@ -128,7 +128,7 @@ a.active{
     transition: opacity 500ms;
 }
 .scrolled.slide-right {
-    animation: slide-in-right 1s ease-in-out both;
+    animation: slide-in-right 1.2s ease-in-out both;
 }
 @keyframes slide-in-right {
     0% {
