@@ -155,10 +155,42 @@ a.active{
     background-color: #fffefe !important;
     text-decoration: none !important;
 }
+.about-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.about-tech{
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.about-tech i{
+    margin-right: 3px;
+}
+.about-icon{
+    /* max-width: 70vw;
+    margin: 0 auto; */
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.about-icon img{
+    margin: 10px 0;
+    max-width: 100px;
+    max-height: 100px;
+}
+.about-icon p{
+    margin-top: 10px;
+    max-width: 45%;
+    text-align: center;
+}
 .contact-name, .contact-details h3, .contact-form h3{
     margin-bottom: 10px;
 }
-.contact-details i, .contact-tech i{
+.contact-details i, .about-tech i{
     color: blue;
     font-size: 1.5rem;
 }
@@ -193,39 +225,7 @@ a.active{
     color: tomato;
     display: none;
 }
-.contact-tech{
-    margin-top: 20px;
-    margin-bottom: 30px;
-    line-height: 1.5;
-}
-.contact-tech i{
-    margin-right: 3px;
-}
-.about-content{
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-}
-.about-icon{
-    max-width: 70vw;
-    margin: 0 auto;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-}
-.about-icon img{
-    margin-top: 10px;
-    max-width: 100px;
-    max-height: 100px;
-}
-.about-icon p{
-    margin-top: 10px;
-    max-width: 45%;
-    text-align: center;
-}
+
 .project-heading, .about-heading, .contact-heading{
     margin-top: 10px;
     text-align: center;
@@ -349,13 +349,12 @@ footer{
     }
     .about-content{
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        margin-top: 40px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
     .about-icon{
-        justify-content:start;
-        margin-top: 40px;
+        margin-top: 20px;
     }
     .about-icon img{
         max-width: 120px;
@@ -364,8 +363,15 @@ footer{
     .about-icon p{
         max-width: 60%;
     }
+    .about-tech{
+        margin-top: 40px;
+    }
+    .about-tech i{
+        padding: 5px 0;
+        margin-right:3px;
+    }
     .about-text{
-        max-width: 60%;
+        max-width: 90%;
     }
     .contact-content{
         flex-direction: row;
@@ -384,10 +390,6 @@ footer{
         flex: 0 0 100%;
         text-align: center;
         margin: 40px 0;
-    }
-    .contact-tech i{
-        padding: 5px 0;
-        margin-right:3px;
     }
 }
 @media screen and (min-width: 900px) {
