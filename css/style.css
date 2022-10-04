@@ -311,9 +311,6 @@ footer{
     .main-content{
         margin-top: 5%;
     }
-    .main-content img{
-        margin-top: 10%;
-    }
     .main-content p{
         display: flex;
         flex-direction: column;
@@ -391,7 +388,6 @@ footer{
     }
     .main-content{
         font-size: 1.2rem;
-        max-width: 60%;
     }
     .site-btn{
         padding: 5px 12px;
