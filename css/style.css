@@ -49,6 +49,7 @@ h4{
 .logo img{
     border-radius: 50%;
     width: 35px;
+    height: 35px;
 }
 ul{
     list-style-type: none;
@@ -118,7 +119,7 @@ a.active{
     max-width: 80%;
     margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .js-scroll{
     transition: opacity 500ms;
@@ -199,7 +200,7 @@ a.active{
 .contact-details, .contact-form{
     line-height: 1.5;
 }
-.contact-details{
+.contact-details, .contact-form{
     margin: 20px 0 10px 0;
 }
 .contact-form input[type="submit"]{
@@ -306,6 +307,7 @@ footer{
     }
     .logo img{
         width: 45px;
+        height: 45px;
     }
     .main-content{
         margin-top: 5%;
