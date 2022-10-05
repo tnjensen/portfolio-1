@@ -117,9 +117,8 @@ a.active{
     min-height: 80vh;
     max-width: 80%;
     margin: 0 auto;
-}
-.main-content{
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 .js-scroll{
     transition: opacity 500ms;
