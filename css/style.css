@@ -374,6 +374,9 @@ footer{
         margin: 0;
         padding: 0;
     }
+    .contact-form{
+        margin-top: 0;
+    }
     .contact-form form{
         max-width: 90%;
     }
