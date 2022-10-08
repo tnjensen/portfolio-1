@@ -206,10 +206,15 @@ a.active{
     margin-top: 20px;
 }
 .contact-form input, textarea{
-    padding: 3px;
+    padding: 8px 0 5px 5px;
 }
 .contact-form{
     line-height: 1.5;
+    font-size: 1.1rem;
+}
+::placeholder{
+    font-size: 1.1rem;
+    font-family: inherit;
 }
 .contact-details, .contact-form{
     margin: 20px 0 10px 0;
