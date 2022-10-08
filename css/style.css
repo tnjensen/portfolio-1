@@ -395,7 +395,7 @@ footer{
         margin-top: 0;
     }
     .contact-form form{
-        max-width: 90%;
+       width: 300px;
     }
     .contact-tech{
         flex: 0 0 100%;
