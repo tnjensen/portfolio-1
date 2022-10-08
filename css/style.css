@@ -157,6 +157,9 @@ a.active{
     flex-direction: column;
     margin-top: 15px;
 }
+.about-text{
+    line-height: 1.5;
+}
 .about-tech{
     margin-bottom: 30px;
     line-height: 1.5;
@@ -206,19 +209,19 @@ a.active{
 .contact-form h3{
     margin-top: 20px;
 }
-.contact-form input, textarea{
-    padding: 8px 0 5px 5px;
+.contact-form input, .contact-form textarea{
+    padding: 5px 0 3px 3px;
+    font-family: inherit !important;
 }
 .contact-form{
     line-height: 1.5;
     font-size: 1.1rem;
 }
-::placeholder{
-    font-size: 1.1rem;
-    font-family: inherit;
-}
 .contact-details, .contact-form{
     margin: 20px 0 10px 0;
+}
+label{
+    margin: 5px 0 2px 0;
 }
 .contact-form input[type="submit"]{
     font-size: 1.1rem;
@@ -392,6 +395,7 @@ footer{
     .contact-details{
         margin: 0;
         padding: 0;
+        margin-bottom: 20px;
     }
     .contact-form{
         margin-top: 0;
