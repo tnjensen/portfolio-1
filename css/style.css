@@ -201,6 +201,7 @@ a.active{
 }
 .contact-name, .contact-email{
     margin-left: 32px;
+    font-size: larger;
 }
 .contact-form h3{
     margin-top: 20px;
