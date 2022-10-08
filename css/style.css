@@ -192,12 +192,23 @@ a.active{
 .contact-form form{
    display: flex;
    flex-direction: column;
-   max-width: 70%;
+   width: 250px;
+}
+.contact-details i{
+ position: relative;
+ left: 0;
+ top: 25px;
+}
+.contact-name, .contact-email{
+    margin-left: 32px;
+}
+.contact-form h3{
+    margin-top: 20px;
 }
 .contact-form input, textarea{
     padding: 3px;
 }
-.contact-details, .contact-form{
+.contact-form{
     line-height: 1.5;
 }
 .contact-details, .contact-form{
@@ -219,6 +230,7 @@ a.active{
 .form-error{
     color: tomato;
     display: none;
+    margin-top: 3px;
 }
 
 .project-heading, .about-heading, .contact-heading{
