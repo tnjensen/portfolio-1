@@ -200,7 +200,7 @@ a.active{
 .contact-details i{
  position: relative;
  left: 0;
- top: 25px;
+ top: 30px;
 }
 .contact-name, .contact-email{
     margin-left: 32px;
@@ -221,7 +221,7 @@ a.active{
     margin: 20px 0 10px 0;
 }
 label{
-    margin: 5px 0 2px 0;
+    margin: 10px 0 2px 0;
 }
 .contact-form input[type="submit"]{
     font-size: 1.1rem;
