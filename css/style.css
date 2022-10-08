@@ -220,7 +220,8 @@ a.active{
     margin: 20px 0 10px 0;
 }
 .contact-form input[type="submit"]{
-    margin-top: 10px;
+    font-size: 1.1rem;
+    margin-top: 15px;
     background-color: blue;
     color: #fffefe;
     border: none;
@@ -393,6 +394,9 @@ footer{
     }
     .contact-form{
         margin-top: 0;
+    }
+    .contact-form h3{
+        margin-top:0;
     }
     .contact-form form{
        width: 300px;
