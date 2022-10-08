@@ -101,6 +101,8 @@ a.active{
 }
 .main-content img{
    margin-top: 10px;
+   width: 225px;
+   height: auto;
 }
 #index{
     scroll-margin-top: 8em;
@@ -343,6 +345,8 @@ footer{
         display: flex;
     }
     .main-content img{
+        width: 245px;
+        height: auto;
         position: relative;
         padding-left: 10px;
         top: 50%;
