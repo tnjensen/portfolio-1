@@ -248,13 +248,14 @@ label{
     flex: 0 0 100%;
 }
 .project-item{
-    flex:1;
-    margin: 10px 0;
-    padding: 10px 0;
+    margin-bottom: 20px;
     width: 100%;
 }
 .project-item h3{
     color: blue;
+}
+.project-item h4{
+    margin-top: 10px;
 }
 .project-item img{
     max-width: 90%;
