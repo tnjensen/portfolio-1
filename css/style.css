@@ -242,7 +242,6 @@ label{
     display: none;
     margin-top: 3px;
 }
-
 .project-heading, .about-heading, .contact-heading{
     margin-top: 10px;
     text-align: center;
@@ -252,7 +251,7 @@ label{
     flex:1;
     margin: 10px 0;
     padding: 10px 0;
-    max-width: 90%;
+    width: 100%;
 }
 .project-item h3{
     color: blue;
@@ -351,9 +350,10 @@ footer{
     }
     .projects{
         flex-direction: row;
+        justify-content: space-between;
     }
     .project-item{
-        margin: 10px 10px 10px 0;
+        width: 30%;
     }
     .site-btn{
         float: left;
