@@ -105,6 +105,8 @@ a.active{
    margin-bottom: 30px;
 }
 .landing-icon{
+    display: flex;
+    flex-direction: column;
     padding-top: 10px;
     margin-bottom: 40px;
 }
