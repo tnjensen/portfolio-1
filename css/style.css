@@ -105,19 +105,22 @@ a.active{
    margin-bottom: 30px;
 }
 .landing-icon{
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
     margin-bottom: 40px;
 }
 .landing-icon img{
-    margin-top: 60px;
-    width: 250px;
-    height: 250px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    width: 150px;
+    height: 150px;
 }
-.landing-icon p{
+.landing-icon figcaption{
     margin-top: 10px;
-    width: 250px;
+    width: 50%;
+    text-align: center;
 }
 #index{
     scroll-margin-top: 8em;
@@ -350,24 +353,21 @@ footer{
     }
     .main-content{
         margin-top: 5%;
-        position: relative;
     }
     .learn-more{
         display: flex;
     }
     .landing-icon{
-        position: absolute;
-        top: 200px;
-        right: 20px;
+        padding-top: 10px;
+        justify-content: center;
+        align-items: flex-end;
     }
     .landing-icon img{
-        margin-top: 0;
-        width: 400px;
+        width: 250px;
         height: auto;
     }
-    .landing-icon p{
-        margin-top: 40px;  
-        width: 400px;
+    .landing-icon figcaption{
+        width: 40%;
     }
     .projects{
         flex-direction: row;
@@ -448,8 +448,14 @@ footer{
         border-radius: 3px;
     }
     .about-icon img{
-        max-width: 150px;
-        max-height: 150px;
+        width: 150px;
+        height: 150px;
+    }
+    .landing-icon img{
+        margin-right: 15px;
+    }
+    .landing-icon figcaption{
+        width: 30%;
     }
 }
 @media screen and(min-width: 1020px){
