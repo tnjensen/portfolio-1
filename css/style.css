@@ -97,12 +97,15 @@ ul{
     position: relative;
     right: 15px;
 }
+.menu-btn i{
+    color: var(--blue);
+}
 .menu-btn:hover{
     cursor: pointer;
 }
 .menu-btn.visible ~ nav ul{
     display: block;
-    background-color:rgb(238, 238, 238);
+    background-color:var(--white);
     background-color: var(--text-white);
     position: absolute;
     top: 60px;
