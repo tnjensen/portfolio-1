@@ -124,7 +124,7 @@ a.active{
    margin-bottom: 30px;
 }
 .span{
-    color: var(--red);
+    color: var(--dark-blue);
 }
 .cta{
     background-color: var(--blue);
