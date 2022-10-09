@@ -23,11 +23,9 @@ body{
 .wrapper{
     max-width: 1160px;
     margin: 0 auto;
-    background-color:rgb(200, 230, 235);
     background-color: var(--green);
 }
 header{
-    background-color: rgb(242, 242, 242);
     background-color: var(--white);
     padding: 10px 15px;
     min-height: 10vh;
@@ -105,7 +103,6 @@ ul{
 }
 .menu-btn.visible ~ nav ul{
     display: block;
-    background-color:var(--white);
     background-color: var(--text-white);
     position: absolute;
     top: 60px;
@@ -271,9 +268,9 @@ a.active{
    width: 100%;
 }
 .contact-details i{
- position: relative;
- left: 0;
- top: 25px;
+    position: relative;
+    left: 0;
+    top: 25px;
 }
 .contact-name, .contact-email{
     margin-left: 32px;
