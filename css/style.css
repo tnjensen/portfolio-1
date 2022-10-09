@@ -210,7 +210,7 @@ a.active{
 .contact-form form{
    display: flex;
    flex-direction: column;
-   width: 250px;
+   width: 100%;
 }
 .contact-details i{
  position: relative;
