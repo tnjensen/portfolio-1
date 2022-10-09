@@ -105,17 +105,18 @@ a.active{
    margin-bottom: 30px;
 }
 .landing-icon{
-    padding-top: 60px;
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
+    justify-content: center;
+    align-items: flex-end;
+    /* margin-bottom: 40px; */
 }
 .landing-icon img{
-    justify-content: center;
-    align-items: center;
     margin: 10px 0;
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
+    margin-right: 10px;
 }
 .landing-icon figcaption{
     margin-top: 10px;
