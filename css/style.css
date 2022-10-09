@@ -110,13 +110,12 @@ a.active{
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    /* margin-bottom: 40px; */
+    margin-right: 10px;
 }
 .landing-icon img{
     margin: 10px 0;
     width: 175px;
     height: 175px;
-    margin-right: 10px;
 }
 .landing-icon figcaption{
     margin-top: 10px;
