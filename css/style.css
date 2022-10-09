@@ -95,14 +95,27 @@ a.active{
     padding: 5px;
     border-radius: 3px;
 }
+.main-content p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .main-content .cta{
    max-width: 130px;
    margin-bottom: 30px;
 }
-.main-content img{
-   margin-top: 10px;
-   width: 225px;
-   height: auto;
+.landing-icon{
+    padding-top: 10px;
+    margin-bottom: 40px;
+}
+.landing-icon img{
+    margin-top: 60px;
+    width: 250px;
+    height: 250px;
+}
+.landing-icon p{
+    margin-top: 10px;
+    width: 250px;
 }
 #index{
     scroll-margin-top: 8em;
@@ -126,7 +139,7 @@ a.active{
 .js-scroll{
     transition: opacity 500ms;
 }
-.scrolled.slide-right {
+.scrolled.slide-right, .landing-icon img {
     animation: slide-in-right 1.2s ease-in-out both;
 }
 @keyframes slide-in-right {
@@ -179,8 +192,8 @@ a.active{
 }
 .about-icon img{
     margin: 10px 0;
-    max-width: 100px;
-    max-height: 100px;
+    width: 100px;
+    height: 100px;
 }
 .about-icon p{
     margin-top: 10px;
@@ -336,22 +349,23 @@ footer{
     .main-content{
         margin-top: 5%;
     }
-    .main-content p{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
     .learn-more{
         display: flex;
     }
-    .main-content img{
-        width: 245px;
-        height: auto;
+    .landing-icon{
+        display: flex;
+        flex-direction: column;
         position: relative;
-        padding-left: 10px;
-        top: 50%;
-        left: 60%;
-        transform: translateY(-50%);
+        left: 50%;
+    }
+    .landing-icon img{
+        margin-top: 0;
+        width: 400px;
+        height: auto;
+    }
+    .landing-icon p{
+        margin-top: 40px;  
+        width: 400px;
     }
     .projects{
         flex-direction: row;
