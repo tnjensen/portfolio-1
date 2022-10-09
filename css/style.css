@@ -350,15 +350,15 @@ footer{
     }
     .main-content{
         margin-top: 5%;
+        position: relative;
     }
     .learn-more{
         display: flex;
     }
     .landing-icon{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        left: 50%;
+        position: absolute;
+        top: 200px;
+        right: 50px;
     }
     .landing-icon img{
         margin-top: 0;
