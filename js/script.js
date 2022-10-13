@@ -8,6 +8,14 @@ let postsPerPage = 0;
 let postResult = [];
 const scrollElements = document.querySelectorAll('.js-scroll');
 const scrollOffset = 100;
+const year = document.getElementById('year');
+
+let date = new Date().getFullYear();
+if( date > 2021){
+  year.innerHTML = `- `+ date;
+}else{
+  year.innerHTML = date;
+}
 
 scrollElements.forEach((el) =>{
     el.style.opacity = 0
