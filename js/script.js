@@ -11,8 +11,8 @@ const scrollOffset = 100;
 const year = document.getElementById('year');
 
 let date = new Date().getFullYear();
-if( date > 2021){
-  year.innerHTML = `- `+ date;
+if( date > 2022){
+  year.innerHTML = `2022 - `+ date;
 }else{
   year.innerHTML = date;
 }
