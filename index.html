@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,7 +18,7 @@
             <div class="header-content">
                 <div class="header-branding">
                     <div class="logo">
-                        <a href="index.html"><img src="images/logo.jpg" alt="my logo" width="50" height="50"></a>
+                        <a href="index.html"><img src="images/dokkbrua_small.jpg" alt="my logo" width="50" height="50"></a>
                     </div>
                     <div class="header-title">
                         <h3>Thomas N. Jensen</h3>
@@ -44,10 +45,14 @@
                 <h1 class="name">Thomas</h1>
                 <p>and I'm a <span class="span">frontend developer</span></p>
                 <a href="#portfolio" class="cta learn-more">Learn More</a>
-                <figure class="landing-icon">
-                    <img src="images/landing-page.png" alt="landing page image" width="225" height="225">
-                    <figcaption><a href="https://www.flaticon.com/free-icons/landing-page">Landing page icons created by Freepik - Flaticon</a></figcaption>
+                <figure class="landing-img">
+                    <img src="images/elvehavn_1.jpg" alt="landing page image" width="200" height="200">
+                    <!-- <figcaption>Me in Elvehavn, Trondheim</figcaption> -->
                 </figure>
+                <div class="landing-icon">
+                    <img src="images/landing-page.png" alt="landing page image" class="slide-left" width="512" height="512">
+                    <p><a href="https://www.flaticon.com/free-icons/landing-page" class="slide-left">Landing page icons created by Freepik - Flaticon</a></p>
+                    </div>
             </section>
             <section class="projects" id="portfolio">
                 <div class="project-heading">
@@ -64,7 +69,7 @@
                         <p>I got my first computer, a Commodore 64, when I was still in high-school. I took a computer class with my father, but this was back in the old DOS-days and it didn't really amount to anything. However, when Windows 95 was launched, my interest in computers and programming really got started. I signed up for a lifetime membership at learnvisualstudio.com, following the video lectures of Bob Tabor from the USA. Besides teaching Visual Studio and C#, he had a series on Javascript and that's how I got into web design. I realized after a while that I wanted to formalize my knowledge, and a friend of mine suggested Lynda.com, now LinkedIn Learning. In recent years, I've discovered the Noroff University, based in Norway, where I'm currently studying Frontend Development.</p>
                     </div>
                     <div class="about-icon">
-                        <img src="images/software.png" alt="web design image" class="js-scroll slide-right" width="150" height="150">
+                        <img src="images/software.png" alt="web design image" class="js-scroll slide-right" width="130" height="130">
                         <p><a href="https://www.flaticon.com/free-icons/cms" class="js-scroll slide-right" title="cms icons">Cms icons created by Freepik - Flaticon</a></p>
                     </div>
                     <div class="about-tech">
@@ -108,18 +113,18 @@
                             </form>
                         </div>
                     </div>
-                </section>
-                
+                </section>   
         </main>
         <footer class="footer">
             <div class="footer-content">
-                <p>Copyright &copy; 2021 <span id="year"></span></p>
+                <p>Copyright &copy; <span id="year"></span></p>
             <div class="footer-social">
               <i class="fa-brands fa-twitter"></i>
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-instagram"></i>
             </div>
-          </footer>
+        </div>
+        </footer>
     </div>
     <script src="js/script.js"></script>
     <script src="js/contact.js"></script>

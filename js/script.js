@@ -4,8 +4,6 @@ const projects = document.querySelector('.projects');
 const url = 'https://noroff.tnjensen.com/portfolio/wp-json/wp/v2/posts?categories=3&_embed&filter[orderby]=date&order=asc';
 const corsEnabledUrl ="https://noroffcors.herokuapp.com/";
 const loader = document.querySelector('.loader');
-let postsPerPage = 0;
-let postResult = [];
 const scrollElements = document.querySelectorAll('.js-scroll');
 const scrollOffset = 100;
 const year = document.getElementById('year');
@@ -20,18 +18,19 @@ if( date > 2022){
 scrollElements.forEach((el) =>{
     el.style.opacity = 0
 })
+
 const elementInView = (el, percentageScroll = 100) => {
     const elementTop = el.getBoundingClientRect().top;
-   
     return (
       elementTop <= 
       ((window.innerHeight || document.documentElement.clientHeight) * (percentageScroll/100))
     );
+    
 };
 const displayScrollElement = (element) => {
         element.classList.add('scrolled');
 }
-   
+
 const hideScrollElement = (element) => {
         element.classList.remove('scrolled');
 }
@@ -45,20 +44,24 @@ const handleScrollAnimation = () => {
         }
     })
 }
-   
+
 window.addEventListener('scroll', () => {
     handleScrollAnimation();
 })
 
-for(let i = 0; i < links.length; i++){
-    links[i].addEventListener('click', function(){
-        let current = document.getElementsByClassName('active');
-        if(current.length > 0){
-            current[0].className = current[0].className.replace(" active", "");
-        } 
-        this.className += " active";
-    })
-    
+window.onload = function showCurrent(){
+    let home = links[0];
+    home.classList.add('active');
+    for(let i = 0; i < links.length; i++){
+        links[i].addEventListener('click', function(){
+            let current = document.getElementsByClassName('active');
+            if(current.length > 0){
+                current[0].className = current[0].className.replace(" active", "");
+                home.classList.remove('active');
+            }
+            this.className += " active";
+        })
+    }
 }
 
 menuBtn.addEventListener('click', function(){
@@ -75,7 +78,6 @@ async function getProjects(){
     try{
         let response = await fetch(url);
         let results = await response.json();
-        console.log(results);
         loader.innerHTML = "";
         loader.classList.remove('loading-indicator');
         createHTML(results);
@@ -104,4 +106,43 @@ function createHTML(results){
         }
     }
     
+}
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop()+175;
+    $('nav a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('nav ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
 }
