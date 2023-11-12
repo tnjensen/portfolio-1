@@ -39,7 +39,7 @@ header{
     z-index: 10;
 }
 .header-branding, .menu-wrap{
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -70,11 +70,40 @@ ul{
     padding-left: 20px;
     color: var(--blue);
 }
+.bars{
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.line{
+    width: 90%;
+    height: 3px;
+    background-color: var(--blue);
+    transform-origin: left;
+    transition: all 1s ease;
+}
+.bars span.active{
+    
+    &:first-child{
+        background-color: var(--blue);
+        transform: rotate(45deg);
+    }
+    &:nth-child(2){
+        display: none;
+    }
+    &:last-child{
+        background-color: var(--blue);
+        transform: rotate(-45deg);
+    }
+}
 .nav-menu ul{
     display: inline-block;
     position: absolute;
     top: 25px;
-    right: 10px;
+    right: 0;
     display: none;
 }
 .nav-menu li{
@@ -89,23 +118,19 @@ ul{
 .menu-btn{
     font-size: 1.1rem;
     display: block;
-    position: relative;
-    right: 15px;
-}
-.menu-btn i{
-    color: var(--blue);
 }
 .menu-btn:hover{
     cursor: pointer;
 }
 .menu-btn.visible ~ nav ul{
-    display: block;
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100vw;
     color: var(--text-white);
     background-color: var(--blue);
     position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 15px 0;
+    top: 65px;
+    padding: 15px;
 }
 a.active{
     background-color: var(--text-white);
